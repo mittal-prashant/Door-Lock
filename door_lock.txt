@@ -48,6 +48,7 @@ module door_lock(reset, password, newpass, confpass, command, cout);
           
           // If reset is is 1 then the password changes to the original password entered by the user
           original = password;
+          $display("Reset Mode");
           
           // Here the door lock went in reset mode and password was changed
           
