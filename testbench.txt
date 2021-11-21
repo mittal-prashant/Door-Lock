@@ -35,24 +35,21 @@ module door();
         p = {4'h1, 4'h2, 4'h3, 4'h4};
 		c = 1;
 		#100;
-		$display("%b %b %b %b",r,p[0],c,cout);
 
 		r = 1;
-		p = {4'h2, 4'h2, 4'h0, 4'h7};
+        p = {4'h2, 4'h2, 4'h0, 4'h7};
+        c = 1;
 		#100;
-		$display("%b %b %b %b",r,p[0],c,cout);
 
 		r = 0;
         p = {4'h2, 4'h2, 4'h0, 4'h7};
 		c = 1;
 		#100;
-		$display("%b %b %b %b",r,p[0],c,cout);
 
 		r = 0;
 		p = {4'h6, 4'h7, 4'h0, 4'h7};
 		c = 1;
 		#100;
-		$display("%b %b %b %b",r,p[0],c,cout);
 
 		r = 0;
         p = {4'h2, 4'h2, 4'h0, 4'h7};
@@ -60,7 +57,6 @@ module door();
         p1 = {4'h9, 4'h3, 4'h6, 4'h5};
         p2 = {4'h4, 4'h9, 4'h1, 4'h3};
 		#100;
-		$display("%b %b %b %b",r,p[0],c,cout);
 
 		r = 0;
         p = {4'h2, 4'h2, 4'h0, 4'h7};
@@ -68,29 +64,26 @@ module door();
         p1 = {4'h4, 4'h9, 4'h1, 4'h3};
         p2 = {4'h4, 4'h9, 4'h1, 4'h3};
 		#100;
-		$display("%b %b %b %b",r,p[0],c,cout);
 
 		r = 0;
 		p = {4'h4, 4'h9, 4'h1, 4'h3};
 		c = 1;
 		#100;
-		$display("%b %b %b %b",r,p[0],c,cout);
 
 		r = 1;
 		p = {4'h4, 4'h9, 4'h1, 4'h3};
+        c = 1;
 		#100;
-		$display("%b %b %b %b",r,p[0],c,cout);
 
 		r = 1;
 		p = {4'h6, 4'h1, 4'h2, 4'h6};
+        c = 1;
 		#100;
-		$display("%b %b %b %b",r,p[0],c,cout);
 
 		r = 0;
 		p = {4'h6, 4'h1, 4'h2, 4'h6};
 		c = 1;
 		#100;
-		$display("%b %b %b %b",r,p[0],c,cout);
 
 		r = 0;
 		p = {4'h9, 4'h6, 4'h4, 4'h6};
@@ -98,36 +91,31 @@ module door();
         p1 = {4'h9, 4'h6, 4'h4, 4'h6};
         p2 = {4'h9, 4'h6, 4'h4, 4'h6};
 		#100;
-		$display("%b %b %b %b",r,p[0],c,cout);
 
 		r = 0;
         p = {4'h9, 4'h6, 4'h4, 4'h5};
 		c = 1;
 		#100;
-		$display("%b %b %b %b",r,p[0],c,cout);
 
 		r = 0;
 		p = {4'h6, 4'h1, 4'h2, 4'h6};
 		c = 1;
 		#100;
-		$display("%b %b %b %b",r,p[0],c,cout);
 
 		r = 0;
 		p = {4'h9, 4'h2, 4'h4, 4'h5};
 		c = 1;
 		#100;
-		$display("%b %b %b %b",r,p[0],c,cout);
 
 		r = 1;
 		p = {4'h2, 4'h4, 4'h1, 4'h6};
+        c = 1;
 		#100;
-		$display("%b %b %b %b",r,p[0],c,cout);
 
 		r = 0;
         p = {4'h1, 4'h4, 4'h1, 4'h6};
 		c = 1;
 		#100;
-		$display("%b %b %b %b",r,p[0],c,cout);
 
 		r = 0;
         p = {4'h2, 4'h4, 4'h1, 4'h6};
@@ -135,13 +123,11 @@ module door();
         p1 = {4'h1, 4'h9, 4'h6, 4'h7};
         p2 = {4'h1, 4'h9, 4'h6, 4'h7};
 		#100;
-		$display("%b %b %b %b",r,p[0],c,cout);
 
 		r = 0;
 		p = {4'h1, 4'h9, 4'h6, 4'h7};
 		c = 1;
 		#100;
-		$display("%b %b %b %b",r,p[0],c,cout);
 
 
         
