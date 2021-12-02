@@ -1,4 +1,11 @@
-# CS203
+# DOOR LOCK
+
+## Team members
+Prashant Mittal - 2020CSB1113  
+Anubhav Kataria - 2020CSB1073
+
+## Teaching Assistant
+Lalit Sharma
 
 ## Creating a Passcode Door Lock Using Digital Logic Design Concepts
 
