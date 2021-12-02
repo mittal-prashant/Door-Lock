@@ -21,4 +21,4 @@ If new password and confirmatory password both are same then we update the passw
 
 Additionally you will get an option to reset the passcode, the lock then goes into store mode, which will ask you for a new passcode for the door.
 
-Every state of the door will be a displayed as ouput, which will whether the door is locked or unlocked or is in store mode.
+Every state of the door will be displayed as ouput, which will tell whether the door is locked or unlocked or is in store mode.
