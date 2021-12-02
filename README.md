@@ -10,7 +10,7 @@ In this project we have designed a Door Lock system in Verilog using Digital Log
 2. Update the Passcode
 3. Reset the Doorlock
 
-### Now as to explain how the code works:
+##### Now as to explain how the code works:
 
 First we have stored the correct passcode in a 4bit x 4bit RAM.
 Next we ask the user to input a 4 digit passcode and then we compare it with the original passcode. We store the input passcode in the same way we stored the original passcode, i.e. using in a 4x4 RAM.
