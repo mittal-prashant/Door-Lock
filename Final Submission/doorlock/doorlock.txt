@@ -2,8 +2,8 @@
 
 // Group 34
 
-// Prashant Mittal 2020CSB1113
-// Anubhav Kataria 2020CSB1073
+// Prashant Mittal-2020CSB1113
+// Anubhav Kataria-2020CSB1073
 
 // Main module of Password Door Lock System
 
