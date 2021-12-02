@@ -63,7 +63,7 @@ module door_lock(reset, password, newpass, confpass, command, cout);
             
             begin
               
-			  // If the password is correct we check what is the command given by user
+			  // If the password is correct we check what is the command given by the user
               if(command) 
                 
                 begin
