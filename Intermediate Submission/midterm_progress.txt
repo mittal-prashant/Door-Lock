@@ -1,0 +1,60 @@
+// Main module of Passcode Door Lock System
+
+module door_lock(reset, passcode, newpass, confpass, command, cout);
+  reg [0:3][0:3] original;
+  input reset;
+  input [0:3][0:3] passcode,newpass,confpass;
+  input command;
+  output reg cout;
+  always @(reset or passcode)
+    begin
+      if(reset) // If reset is 1 that means password is updated
+        update u1(original,passcode);
+      else // If reset is 0 then we check the password entered with correct passcode
+        begin
+       	  check c1(original,passcode,cout);
+          if(cout) // If it is same then check if user wants to update or unlock the door
+            case (command)
+              1'b1 : $display("Door Unlocked"); // If command is 1 that means user wants to unlock
+              1'b0 : newcode n1(original,newpass,confpass); // If command is 0 update passcode
+            endcase
+          else
+            $display("Wrong Passcode"); // If password is different orint Wrong Passcode
+        end
+    end
+endmodule
+
+// module to compare entered passcode and original passcode
+
+module check(pc,ps,ch);
+  // pc is passcode entered
+  // ps is original passcode
+  input [0:3][0:3] ps,pc;
+  output ch;
+endmodule
+
+// module to update existing passcode
+
+module update(ps,pc);
+  // pc is passcode entered
+  // ps is original passcode
+  input [0:3][0:3] pc;
+  output reg [0:3][0:3] ps;
+  always @(*)
+    begin
+      $display("Updated Passcode");
+    end
+endmodule
+
+// module to change the passcode
+
+module newcode(pc,pc1,pc2);
+  input [0:3][0:3] pc1,pc2;
+  output reg [0:3][0:3] pc;
+  reg ch;
+  check c2(pc1,pc2,ch); // Check if entered passwords match each other
+  always @(posedge ch) // If passwords match then update the password for door
+    begin
+      update(pc,pc1);
+    end
+endmodule
