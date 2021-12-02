@@ -15,7 +15,7 @@ module doorlock();
   // r is to reset the password
   // p is the entered password
   // p1 stores new password to be changed
-  // p2 stores confirmed new password
+  // p2 stores confirmed new password when changing
   // c is command to change or unlock the door
   // cout tells whether door is locked or unlocked
   
